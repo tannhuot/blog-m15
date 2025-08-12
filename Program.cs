@@ -1,7 +1,10 @@
+using blog_m15.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<AppDBContext>();
 
 var app = builder.Build();
 
