@@ -15,6 +15,7 @@ namespace blog_m15.Pages.Category
 
         public async Task<IActionResult> OnPost() {
 
+            ModelState.Remove("Category.Posts");
             if (ModelState.IsValid)
             {
                 await _db.Categories.AddAsync(Category);

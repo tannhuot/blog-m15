@@ -1,11 +1,11 @@
 ﻿namespace blog_m15.Models
 {
-    public class CategoryEntiry
+    public class TagEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }
 
-        // One to Many (Many)
+        // Many To Many
         // Navigation Reference Property
         public ICollection<PostEntity> Posts { get; set; }
     }
